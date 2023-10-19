@@ -21,7 +21,6 @@ export const fetchProducts = createAsyncThunk<{productData: ProductDto[]}>(
   async () => {
     const result = await fetchProductsApi();
     if (result.kind === 'success') {
-      console.log('Products result is' + result.body);
       return {productData: result.body ?? []};
     } else {
       throw 'Error fetching products data';
