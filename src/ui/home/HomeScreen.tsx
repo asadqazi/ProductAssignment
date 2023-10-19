@@ -13,7 +13,6 @@ import {
 import {useDispatch, useSelector} from 'react-redux';
 import {AppDispatch, RootState} from '../../store/store';
 import {fetchProducts} from '../../store/slices/productsSlice';
-import {ProductDto} from '../../store/dto/ProductDto';
 import Colors from '../../theme/Colors';
 import ProductItem from './ProductItem';
 import {useNavigation} from '@react-navigation/native';
